@@ -1,0 +1,731 @@
+@font-face {
+    font-family: 'myfont';
+    src: url(../fonts/HelveticaNeue-UltraLight.eot);
+
+}
+
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+        font-family: 'Abel',serif;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+ font-family: Helvetica Neue;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+/*    border-bottom: 1px solid #fafafb;*/
+}
+
+
+.footer-container,
+.main aside {
+    border-top: 1px solid #fafafb;
+}
+
+
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 0px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+$maidanGreen: #8eae3e;
+
+nav a {
+    font-family: 'Lato' !important;
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    width: 72%;
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    background: $maidanGreen;
+}
+
+nav a:hover,
+nav a:visited {
+    color: #484848;
+}
+
+nav a:hover {
+    color: #171717;
+    text-decoration: none;
+}
+
+
+.header-container
+{
+    background: $maidanGreen;
+}
+.footer-container,
+.main aside {
+    background: #191718;
+}
+
+.title {
+    color: white;
+}
+
+
+.topMenu
+{
+
+    font-size: 16px;
+    width:500px;
+    padding-top: 25px;
+    
+    .registerBtn
+    {
+        color: white;
+        background-color: #62792b;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        border-bottom: 3px inset #516323;
+        padding-right:20px;
+        padding-left: 20px;
+    }
+
+}
+
+
+p
+{
+    width: 400px;
+}
+
+.titleWidth
+{
+    width: 400px;
+}
+
+.holder
+{
+    width: 100%;
+    height: 500px;
+    background: #090909;
+}
+
+#firstHolder
+{
+    background: url("../img/128.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .middleText
+    {   
+        text-align: center;
+        font-size: 75px;
+        padding-top:100px ;
+        color: #FFF;  
+        
+        .weMakeFood
+        {
+            margin: auto;
+            padding-bottom: 20px;
+            width: 70%;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .textUnderTitle
+        {
+            padding-top: 20px;
+            font-size: 35px;
+        }
+
+        .joinBtn
+        {   
+            cursor: pointer;
+            color: #fff;
+            margin:50px auto;
+            font-size: 30px;
+            padding: 15px 100px;
+            width: 300px;
+            background-color: $maidanGreen;
+            border-bottom: 4px inset #769036;
+            -webkit-border-radius: 5px;
+                    border-radius: 5px;
+        }
+
+        .registerBtn:hover
+        {   
+            background-color: #799535;
+            border-bottom: 4px inset #586c29;
+        }
+
+    }
+
+    .middleText .weMakeFood, .middleText span.boldText
+    {
+        text-shadow: 2px 2px 5px #0e0e0e;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+}
+
+
+#secondHolder
+{
+    background: url("../img/221.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.leftText
+{   
+    width: 100px;
+    text-align: left;
+    font-size: 60px;
+    padding-top:90px ;
+    color: $maidanGreen;  
+    
+    .title
+    {
+        color: $maidanGreen; 
+        @extend .titleWidth;
+    }
+
+}
+
+#thirdHolder
+{
+    background: url("../img/118.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#thirdHolder .leftPic
+{
+    position: absolute;
+    background:#171c0a;
+    width: 500px;
+    height: 500px;
+}
+
+.rightText
+{   
+    width: 100px;
+    text-align: left;
+    font-size: 60px;
+    padding-top:90px;
+    padding-left: 650px;
+
+    color: #FFF;  
+    
+    .title
+    {
+        @extend .titleWidth;
+    }
+
+}
+
+
+#fourthHolder
+{
+    background: url("../img/bg_texture.png");
+    background-repeat: repeat;
+    width: 100%;
+    
+    .middleText
+    {
+        font-size: 70px;
+        padding-top: 70px;
+        color: #4a4a4a;
+        text-align: center;
+    }
+    
+    .rightPic
+    {
+        position: absolute;
+        right:0px;
+        background:#171c0a;
+        width: 500px;
+        height: 500px;
+    }
+
+     nav.list
+    {
+        width: 100%;
+        padding-top: 50px;
+        margin: auto;
+        
+        ul
+        {
+            width:70%;
+            list-style:none;
+            margin: auto;
+           
+            li
+            {
+                display:inline;
+                margin-left: 80px;
+                float: left;
+                width: 150px;
+                
+                img
+                {
+                    height:100px;
+                }
+
+                .stepText
+                {
+                    padding-top: 20px;
+                    width:150px;
+                    font-size: 18px;
+                   
+                    span
+                    {
+                        font-weight: 900;
+                        font-size: 20px;
+                    }
+                }
+            } 
+
+            
+            
+            li:last-child
+            {
+                margin-right:0;
+            } 
+        }   
+    }
+
+    @media only screen and (min-width: 650px) 
+    {
+        height: 600px;
+
+    }
+
+    @media only screen and (max-width: 649px) 
+    {
+        height: 1100px;
+
+    }
+
+}
+
+.footer-container
+{
+
+    p
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 100;
+        margin-top: 30px;
+    }
+
+    .footerMap
+    {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        text-align: center;
+        a
+        {
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            color: #aaaaaa;
+            font-size: 15px;
+        }
+
+        a:hover
+        {
+            color: #FFF;
+        }
+    }
+
+    .footerLogo
+    {
+        text-align: center;
+    
+        img
+        {
+            height: 70px;
+        }
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px) 
+{
+    .weMakeFood
+    {
+        font-size: 50px;
+    }
+    .textUnderTitle
+    {
+        font-size: 25px !important;
+    }
+
+    .title
+    {
+        width: 100%;
+        padding-top: 20px;
+        
+        img
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 70px;
+        }
+    }
+
+
+    nav a
+    {
+        background: #fff;
+        color: $maidanGreen;
+    }
+
+
+
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 100px;
+        margin: 0 1.7%;
+        padding: 15px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .title img {
+        height: 70px;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 100%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
