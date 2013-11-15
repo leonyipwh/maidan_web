@@ -140,8 +140,51 @@ nav ul {
 $maidanGreen: #8eae3e;
 
 
+/* FAQ */
+#faqTopBanner
+{
+    background: url("../img/62.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    margin-bottom: 50px;
+}
+
+.questionContainer
+{
+    margin-top: 10px;
+    
+    .question
+    {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .question.opened
+    {
+        color: $maidanGreen;
+        font-size: 24px;
+    }
+
+    .question:hover
+    {
+        color: $maidanGreen;
+        cursor:pointer;
+    }
+
+    .answer
+    {
+        display:none;
+        padding-top: 10px;
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+}
+
+
 /* about */
-#topBanner
+#aboutTopBanner
 {
     background: url("../img/61.jpg");
     background-size: cover;
@@ -186,7 +229,6 @@ $maidanGreen: #8eae3e;
         .sideNav
         {
             border-left: 1px solid #ababab;
-            color: #515151;
             font-size: 15px;
             float: left;
 
@@ -206,6 +248,7 @@ $maidanGreen: #8eae3e;
                     a
                     {
                         background-color: #fff;
+                        color: #515151;
                     }
                     
                 }
@@ -495,6 +538,7 @@ p
 
 .footer-container
 {
+    margin-top: 50px;
 
     p
     {

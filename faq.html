@@ -26,6 +26,9 @@
         <link href="css/demo.css" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -49,22 +52,43 @@
 
         <div class="main-container">
             <div class="main clearfix">
-                <div id="topBanner"></div>
+                <div id="faqTopBanner"></div>
                 
                 <div id="content" class="wrapper">
                     <div class="leftContent">
-                        <div class="title">maiDan we make food FASTER 
+                        <div class="title">Frequently Asked Questions
                         </div>
-                        <p>
-                            Today, EAT Club is the fastest growing lunch delivery service in the San Francisco Bay Area because we take a better approach. We collaborate with the best local restaurants to provide quality and affordable meals that are prepared fresh daily. We make it easy to find the perfect lunch because every meal is beautifully photographed and presented with a description, ratings and ingredients. We keep things interesting by providing a changing assortment of top rated dishes and adding new ones weekly. And we make lunch convenient by delivering to you on time and backing every order with amazing customer support.
-                        </p>
+                            <div class="questionContainer">
+                                <div class="question">
+                                    Why does EAT Club want my information?
+                                </div>
+                                <div class="answer">
+                                    When you sign up for an account with EAT Club we need to enter your company address in to our data system. This tells our drivers where to deliver your meal. We anticipate that we will have multiple folks from any given company opening an account with EAT Club, therefore, we use the domain name of your company email to associate you and all of your coworkers with the correct delivery address. Personal emails would not allow us to automatically associate you with your company.
+                                </div>
+                            </div>
+                            <div class="questionContainer">
+                                <div class="question">
+                                    How do I reset my password?
+                                </div>
+                                <div class="answer">
+                                    Simply click on the reset password button that is next to your login box. We will email you a password reset link that you must follow to reset your password. EAT Club does not have access to your password on our end, so please remember to write your password down. If you are unable to reset your password after following these steps, please contact us at support@myeatclub.com.
+                                </div>
+                            </div>
+                            <div class="questionContainer">
+                                <div class="question">
+                                    When should I expect my meal to be delivered?
+                                </div>
+                                <div class="answer">
+                                    EAT Club's delivery window begins at 11:45 am and ends at 12:30 pm. Group orders will be delivered first, then individual meals.
+                                </div>
+                            </div>
                     </div>
                     <div class="rightContent">
                         <nav class="sideNav">
                             <ul>
-                                <li><a class="selected" href="">About</a></li>
-                                <li><a href="">FAQ</a></li>
-                                <li><a href="">Contact Us</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a class="selected" href="faq.html">FAQ</a></li>
+                                <li><a href="contactUs.html">Contact Us</a></li>
                                 <li><a href="">Facebook</a></li>
                                 <li><a href="">Twitter</a></li>
                             </ul>
@@ -91,11 +115,48 @@
             </footer>
         </div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+ 
+               $(".question").click(function()
+               {                
+                    openDropdown(this);
+                    console.log("click");
+                });
+            });
+
+            function closeOpenedDropbox()
+            {
+                var activeBlock = $('.question.opened');
+                activeBlock.removeClass('opened');
+                
+                activeBlock.parent().children(".answer").slideUp();
+            }
+
+            function openDropdown(questionBlock)
+            {
+                if (!$(questionBlock).hasClass('opened'))
+                {
+                    closeOpenedDropbox();
+                    $(questionBlock).addClass('opened');
+                    $(questionBlock).parent().children(".answer").slideDown();
+                }
+                else
+                {
+                    closeOpenedDropbox();
+                }
+                
+            }
+
+        </script>
+
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

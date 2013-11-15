@@ -103,8 +103,34 @@ nav ul {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* FAQ */
+#faqTopBanner {
+  background: url("../img/62.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  margin-bottom: 50px; }
+
+.questionContainer {
+  margin-top: 10px; }
+  .questionContainer .question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px; }
+  .questionContainer .question.opened {
+    color: #8eae3e;
+    font-size: 24px; }
+  .questionContainer .question:hover {
+    color: #8eae3e;
+    cursor: pointer; }
+  .questionContainer .answer {
+    display: none;
+    padding-top: 10px;
+    font-size: 17px;
+    margin-bottom: 40px; }
+
 /* about */
-#topBanner {
+#aboutTopBanner {
   background: url("../img/61.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,7 +158,6 @@ nav ul {
   width: 20%; }
   #content .rightContent .sideNav {
     border-left: 1px solid #ababab;
-    color: #515151;
     font-size: 15px;
     float: left; }
     #content .rightContent .sideNav ul {
@@ -141,7 +166,8 @@ nav ul {
         font-size: 20px;
         color: #8eae3e; }
       #content .rightContent .sideNav ul li a {
-        background-color: #fff; }
+        background-color: #fff;
+        color: #515151; }
 
 /* Index */
 nav a {
@@ -313,27 +339,29 @@ p {
     #fourthHolder {
       height: 1100px; } }
 
-.footer-container p {
-  width: 100%;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 100;
-  margin-top: 30px; }
-.footer-container .footerMap {
-  margin-top: 15px;
-  margin-bottom: 30px;
-  text-align: center; }
-  .footer-container .footerMap a {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    color: #aaaaaa;
-    font-size: 15px; }
-  .footer-container .footerMap a:hover {
-    color: #FFF; }
-.footer-container .footerLogo {
-  text-align: center; }
-  .footer-container .footerLogo img {
-    height: 70px; }
+.footer-container {
+  margin-top: 50px; }
+  .footer-container p {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 30px; }
+  .footer-container .footerMap {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center; }
+    .footer-container .footerMap a {
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      color: #aaaaaa;
+      font-size: 15px; }
+    .footer-container .footerMap a:hover {
+      color: #FFF; }
+  .footer-container .footerLogo {
+    text-align: center; }
+    .footer-container .footerLogo img {
+      height: 70px; }
 
 @media only screen and (max-width: 768px) {
   .weMakeFood {
