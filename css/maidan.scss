@@ -140,6 +140,22 @@ nav ul {
 $maidanGreen: #8eae3e;
 
 
+/* Contact Us */
+.highlightText
+{
+    a
+    {
+        color:$maidanGreen;
+    }
+
+    a:hover
+    {
+        color:$maidanGreen;
+    }
+
+}
+
+
 /* FAQ */
 #faqTopBanner
 {
@@ -159,6 +175,7 @@ $maidanGreen: #8eae3e;
         font-size: 20px;
         font-weight: bold;
         margin-top: 30px;
+        color: #7a7a7a;
     }
 
     .question.opened
@@ -179,6 +196,7 @@ $maidanGreen: #8eae3e;
         padding-top: 10px;
         font-size: 17px;
         margin-bottom: 40px;
+        line-height: 25px;
     }
 }
 
@@ -277,7 +295,7 @@ nav a {
 
 nav a:hover,
 nav a:visited {
-    color: #484848;
+    color: #ffffff;
 }
 
 nav a:hover {
@@ -538,7 +556,7 @@ p
 
 .footer-container
 {
-    margin-top: 50px;
+    margin-top: 70px;
 
     p
     {

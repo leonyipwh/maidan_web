@@ -103,6 +103,12 @@ nav ul {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* Contact Us */
+.highlightText a {
+  color: #8eae3e; }
+.highlightText a:hover {
+  color: #8eae3e; }
+
 /* FAQ */
 #faqTopBanner {
   background: url("../img/62.jpg");
@@ -116,7 +122,8 @@ nav ul {
   .questionContainer .question {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 30px; }
+    margin-top: 30px;
+    color: #7a7a7a; }
   .questionContainer .question.opened {
     color: #8eae3e;
     font-size: 24px; }
@@ -127,7 +134,8 @@ nav ul {
     display: none;
     padding-top: 10px;
     font-size: 17px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    line-height: 25px; }
 
 /* about */
 #aboutTopBanner {
@@ -183,7 +191,7 @@ nav a {
 
 nav a:hover,
 nav a:visited {
-  color: #484848; }
+  color: #ffffff; }
 
 nav a:hover {
   color: #171717;
@@ -340,7 +348,7 @@ p {
       height: 1100px; } }
 
 .footer-container {
-  margin-top: 50px; }
+  margin-top: 70px; }
   .footer-container p {
     width: 100%;
     text-align: center;
