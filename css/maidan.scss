@@ -140,6 +140,82 @@ nav ul {
 $maidanGreen: #8eae3e;
 
 
+/* register page */
+
+#registerForm
+{
+    float: left;
+    width:300px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    
+    .title
+    {
+        width: 100%;
+        color: $maidanGreen;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .loginText
+    {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    a.loginBtn
+    {
+        font-size: 15px;
+        padding:10px 20px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        color: #FFF;
+        background-color: $maidanGreen;
+        margin-left: 20px;
+    }
+
+
+    .registerField
+    {
+        font-size: 18px;
+        
+        input
+        {   
+            width: 300px;
+            
+        }
+
+    }
+
+    .continueBtn
+    {
+        font-size: 15px;
+        padding:10px 120px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        color: #FFF;
+        background-color: $maidanGreen;
+    }
+    
+}
+
+.registerFlow
+{
+    float: right;
+    background: url("../img/step.png");
+    background-repeat: no-repeat;
+    width: 590px;
+    height: 800px;
+    
+    @media only screen and (max-width: 990px) 
+    {
+        display:none;
+
+    }
+}
+
+
+
 /* Contact Us */
 .highlightText
 {
@@ -556,7 +632,7 @@ p
 
 .footer-container
 {
-    margin-top: 70px;
+    margin-top: auto;
 
     p
     {
