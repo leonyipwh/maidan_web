@@ -106,7 +106,7 @@ nav ul {
 /* register page */
 #registerForm {
   float: left;
-  width: 300px;
+  width: 400px;
   padding-top: 30px;
   margin-bottom: 50px; }
   #registerForm .title {
@@ -146,6 +146,21 @@ nav ul {
   @media only screen and (max-width: 990px) {
     .registerFlow {
       display: none; } }
+
+.mapContainer {
+  float: right;
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 800px; }
+  @media only screen and (max-width: 990px) {
+    .mapContainer {
+      display: none; } }
+
+/* register location */
+#map_canvas {
+  width: 600px;
+  height: 800px;
+  background-color: #CCC; }
 
 /* Contact Us */
 .highlightText a {

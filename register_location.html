@@ -26,6 +26,52 @@
         <link href="css/demo.css" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+        <!-- google map -->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script>
+
+
+
+        function initialize() 
+        {
+            var myLatlng = new google.maps.LatLng(22.279685,114.160558);
+            var map_canvas = document.getElementById('map_canvas');
+            var marker;
+            var map_options = 
+            {
+                zoom: 18,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+
+            marker = new google.maps.Marker(
+            
+            {
+                position: myLatlng,
+                map: new google.maps.Map(map_canvas, map_options),
+                title: 'Cheung Kong Centre',
+                animation: google.maps.Animation.DROP
+            });
+            
+            google.maps.event.addListener(marker, 'click', toggleBounce);
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+        function toggleBounce()
+        {
+            if (this.getAnimation() != null) 
+            {
+                this.setAnimation(null);
+            } else 
+            {
+                this.setAnimation(google.maps.Animation.BOUNCE);
+            }
+        }
+        </script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -54,60 +100,26 @@
                     <div id ="registerContent">
                         <div id="registerForm">
                             <div class="title">
-                                Register Now!
+                                Hi William, tell us where you work
                             </div>
                             <div class="loginText">
-                                Already a member?<a class="loginBtn" href="login.html">Login</a>
+                                maiDan only delivers to offices in <br>Cheung Kong Center
                             </div>
                             <fieldset class="registerField">
                                 <label> 
-                                    First Name:
+                                    Company Name:
                                 </label>
                                 <br>
-                                <input id="id_first" type="text" class="registration-field" name="first" maxlength="30">
-                                <br>
-                                <br>
-                                <label> 
-                                    Last Name:
-                                </label>
-                                <br>
-                                <input id="id_lastName" type="text" class="registration-field" name="first" maxlength="30">
-                                <br>
-                                <br>
-                                <label> 
-                                    E-mail:
-                                </label>
-                                <br>
-                                <input id="id_email" type="text" class="registration-field" name="first" maxlength="30">
-                                <br>
-                                <br>
-                                <label> 
-                                    Password:
-                                </label>
-                                <br>
-                                <input id="id_password" type="text" class="registration-field" name="first" maxlength="30">
-                                <br>
-                                <br>
-                                <label> 
-                                    Confirm Password:
-                                </label>
-                                <br>
-                                <input id="id_conPassword" type="text" class="registration-field" name="first" maxlength="30">
-                                <br>
-                                <br>
-                                <label> 
-                                    Phone:
-                                </label>
-                                <br>
-                                <input id="id_phone" type="text" class="registration-field" name="first" maxlength="30">
+                                <input id="company_name" type="text" class="registration-field" name="first" maxlength="30">
                                 <br>
                                 <br>
                                 <br>
-                                <a class="continueBtn" href="register_location.html">Continue</a>
+                                <a class="continueBtn" href="">Continue</a>
                             </fieldset>
 
                         </div>
-                        <div class="registerFlow">
+                        <div class="mapContainer">
+                            <div id="map_canvas"></div>
                         </div>
                     </div>
                 </div>

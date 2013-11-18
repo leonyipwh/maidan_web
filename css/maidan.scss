@@ -145,7 +145,7 @@ $maidanGreen: #8eae3e;
 #registerForm
 {
     float: left;
-    width:300px;
+    width:400px;
     padding-top: 30px;
     margin-bottom: 50px;
     
@@ -199,8 +199,7 @@ $maidanGreen: #8eae3e;
     
 }
 
-.registerFlow
-{
+.registerFlow{
     float: right;
     background: url("../img/step.png");
     background-repeat: no-repeat;
@@ -212,6 +211,28 @@ $maidanGreen: #8eae3e;
         display:none;
 
     }
+}
+
+.mapContainer
+{
+    float: right;
+    background-repeat: no-repeat;
+    width: 590px;
+    height: 800px;
+    
+    @media only screen and (max-width: 990px) 
+    {
+        display:none;
+
+    }
+}
+
+/* register location */
+#map_canvas 
+{
+    width: 600px;
+    height: 800px;
+    background-color: #CCC;
 }
 
 
