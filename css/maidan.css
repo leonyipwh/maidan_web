@@ -203,6 +203,9 @@ nav ul {
         vertical-align: top;
         font-weight: bold;
         margin-bottom: 30px; }
+        @media only screen and (max-width: 560px) {
+          #centerContent .customerInfoContainer .contact .lable {
+            font-size: 20px; } }
       #centerContent .customerInfoContainer .contact .customerInfo {
         display: inline-block; }
       #centerContent .customerInfoContainer .contact .info {
