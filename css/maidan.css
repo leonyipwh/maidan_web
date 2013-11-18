@@ -2,6 +2,9 @@
   font-family: 'myfont';
   src: url(../fonts/HelveticaNeue-UltraLight.eot); }
 
+a:hover {
+  color: none; }
+
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
@@ -129,13 +132,17 @@ nav ul {
     font-size: 18px; }
     #registerForm .registerField input {
       width: 300px; }
-  #registerForm .continueBtn {
-    font-size: 15px;
-    padding: 10px 120px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    color: #FFF;
-    background-color: #8eae3e; }
+
+.continueBtn {
+  font-size: 15px;
+  padding: 10px 120px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #FFF;
+  background-color: #8eae3e; }
+
+.continueBtn:hover {
+  color: #FFF; }
 
 .registerFlow {
   float: right;
@@ -161,6 +168,47 @@ nav ul {
   width: 600px;
   height: 800px;
   background-color: #CCC; }
+
+/* register thanks */
+#centerContent {
+  text-align: center;
+  float: none; }
+  #centerContent .topTitle {
+    color: #8eae3e;
+    font-size: 45px;
+    margin-top: 50px;
+    text-align: center; }
+  #centerContent .customerInfoContainer {
+    font-size: 10px;
+    color: #5c5c5c; }
+    #centerContent .customerInfoContainer .contact {
+      margin: 30px auto;
+      width: 100%; }
+      #centerContent .customerInfoContainer .contact .editLocation {
+        display: inline-block;
+        width: 200px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-left: 30px; }
+      #centerContent .customerInfoContainer .contact .editLocation a {
+        color: #8eae3e; }
+      #centerContent .customerInfoContainer .contact .editLocation a:hover {
+        color: #728c32; }
+      #centerContent .customerInfoContainer .contact .lable {
+        display: inline-block;
+        width: 100px;
+        font-size: 15px;
+        text-align: left;
+        text-transform: uppercase;
+        vertical-align: top;
+        font-weight: bold;
+        margin-bottom: 30px; }
+      #centerContent .customerInfoContainer .contact .customerInfo {
+        display: inline-block; }
+      #centerContent .customerInfoContainer .contact .info {
+        text-align: left;
+        font-size: 15px;
+        width: 400px; }
 
 /* Contact Us */
 .highlightText a {

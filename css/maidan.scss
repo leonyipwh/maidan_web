@@ -4,6 +4,11 @@
 
 }
 
+a:hover
+{
+    color:  none;
+}
+
 
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
@@ -186,17 +191,21 @@ $maidanGreen: #8eae3e;
         }
 
     }
-
-    .continueBtn
-    {
-        font-size: 15px;
-        padding:10px 120px;
-        -webkit-border-radius: 5px;
-                border-radius: 5px;
-        color: #FFF;
-        background-color: $maidanGreen;
-    }
     
+}
+
+.continueBtn
+{
+    font-size: 15px;
+    padding:10px 120px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    color: #FFF;
+    background-color: $maidanGreen;
+}
+.continueBtn:hover
+{
+    color: #FFF;
 }
 
 .registerFlow{
@@ -235,6 +244,75 @@ $maidanGreen: #8eae3e;
     background-color: #CCC;
 }
 
+/* register thanks */
+#centerContent
+{
+    text-align: center;
+    float: none;
+    .topTitle
+    {
+        color: $maidanGreen;
+        font-size: 45px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .customerInfoContainer
+    {
+        font-size: 10px;
+        color:#5c5c5c;
+        
+        .contact
+        {   
+            margin: 30px auto;
+            width: 100%;
+            
+            .editLocation
+            {
+                display: inline-block; 
+                width: 200px;
+                cursor: pointer;
+                font-size: 14px;
+                margin-left: 30px;
+
+            }
+
+            .editLocation a
+            {
+                color: $maidanGreen;            
+            }
+
+            .editLocation a:hover
+            {
+                color:  #728c32;
+            }
+            
+            .lable
+            {
+                display: inline-block;      
+                width: 100px;
+                font-size: 15px;
+                text-align: left;
+                text-transform: uppercase;
+                vertical-align:top;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+
+            .customerInfo
+            {
+                display: inline-block;
+            }
+
+            .info
+            {   
+                text-align: left;
+                font-size: 15px;
+                width: 400px;
+            }
+        }
+    }
+}
 
 
 /* Contact Us */
