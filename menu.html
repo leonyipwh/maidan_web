@@ -26,68 +26,17 @@
         <link href="css/demo.css" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-
-        <!-- google map -->
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-        <script>
-
-
-
-        function initialize() 
-        {
-            var myLatlng = new google.maps.LatLng(22.279685,114.160558);
-            var map_canvas = document.getElementById('map_canvas');
-            var marker;
-            var map_options = 
-            {
-                zoom: 18,
-                center: myLatlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-
-            marker = new google.maps.Marker(
-            
-            {
-                position: myLatlng,
-                map: new google.maps.Map(map_canvas, map_options),
-                title: 'Cheung Kong Centre',
-                animation: google.maps.Animation.DROP
-            });
-            
-            google.maps.event.addListener(marker, 'click', toggleBounce);
-
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-
-        function toggleBounce()
-        {
-            if (this.getAnimation() != null) 
-            {
-                this.setAnimation(null);
-            } else 
-            {
-                this.setAnimation(google.maps.Animation.BOUNCE);
-            }
-        }
-        </script>
-
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="header-container">
+        <div class="menuHeader-container">
             <header class="wrapper clearfix">
-                <div class="title"><a href="index.html"><img src="img/logo.png"/></a></div>
-                <nav class="topMenu">
+                <div class="title"><a href="index.html"><img src="http://m.maidan.hk/images/logo.png"/></a></div>
+                <nav class="menuNav">
                     <ul>
-                        <!-- <li><a href="#">Hot Picks</a></li> -->
-                        <li><a href="menu.html">Menu</a></li>
-                        <!-- <li><a href="#">Restaurants</a></li> -->
-                        <li><a href="login.html">Login</a></li>
-                        <li><a class="registerBtn" href="register.html">Register</a></li>
                     </ul>
                 </nav>
             </header>
@@ -97,30 +46,6 @@
             <div class="main clearfix">
                 
                 <div id="content" class="wrapper">
-                    <div id ="registerContent">
-                        <div id="registerForm">
-                            <div class="title">
-                                Hi William, tell us where you work
-                            </div>
-                            <div class="loginText">
-                                maiDan only delivers to offices in <br>Cheung Kong Center
-                            </div>
-                            <fieldset class="registerField">
-                                <label> 
-                                    Company Name:
-                                </label>
-                                <br>
-                                <input id="company_name" type="text" class="registration-field" name="first" maxlength="30">
-                                <br>
-                                <br>
-                                <a class="continueBtn" href="register_thanks.html">Continue</a>
-                            </fieldset>
-
-                        </div>
-                        <div class="mapContainer">
-                            <div id="map_canvas"></div>
-                        </div>
-                    </div>
                 </div>
 
             </div> <!-- #main -->

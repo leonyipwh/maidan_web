@@ -1,13 +1,20 @@
 @font-face {
     font-family: 'myfont';
     src: url(../fonts/HelveticaNeue-UltraLight.eot);
-
 }
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(https://themes.googleusercontent.com/static/fonts/oswald/v7/bH7276GfdCjMjApa_dkG6bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
 
 a:hover
 {
     color:  none;
 }
+
 
 
 /* ==========================================================================
@@ -107,7 +114,6 @@ nav ul {
 }
 
 
-
 /* ==============
     MOBILE: Main
    ============== */
@@ -143,6 +149,13 @@ nav ul {
    ========================================================================== */
 
 $maidanGreen: #8eae3e;
+
+
+/* menu */
+.menuHeader-container
+{
+    background: #fff;
+}
 
 
 /* register page */
@@ -477,10 +490,6 @@ nav a {
     background: $maidanGreen;
 }
 
-nav a:hover,
-nav a:visited {
-    color: #ffffff;
-}
 
 nav a:hover {
     color: #171717;
@@ -506,8 +515,9 @@ nav a:hover {
 {
 
     font-size: 16px;
-    width:500px;
+    width:400px;
     padding-top: 25px;
+
     
     .registerBtn
     {
@@ -523,264 +533,264 @@ nav a:hover {
 }
 
 
-p
-{
-    width: 400px;
-}
+    p
+    {
+        width: 400px;
+    }
 
-.titleWidth
-{
-    width: 400px;
-}
+    .titleWidth
+    {
+        width: 400px;
+    }
 
-.holder
-{
-    width: 100%;
-    height: 500px;
-    background: #090909;
-}
+    .holder
+    {
+        width: 100%;
+        height: 500px;
+        background: #090909;
+    }
 
-#firstHolder
-{
-    background: url("../img/128.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    .middleText
+    #firstHolder
+    {
+        background: url("../img/128.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        .middleText
+        {   
+            text-align: center;
+            font-size: 75px;
+            padding-top:100px ;
+            color: #FFF;  
+            
+            .weMakeFood
+            {
+                margin: auto;
+                padding-bottom: 20px;
+                width: 70%;
+                border-bottom: 1px solid #ffffff;
+            }
+
+            .textUnderTitle
+            {
+                padding-top: 20px;
+                font-size: 35px;
+            }
+
+            .joinBtn
+            {   
+                cursor: pointer;
+                color: #fff;
+                margin:50px auto;
+                font-size: 30px;
+                padding: 15px 100px;
+                width: 300px;
+                background-color: $maidanGreen;
+                border-bottom: 4px inset #769036;
+                -webkit-border-radius: 5px;
+                        border-radius: 5px;
+            }
+
+            .registerBtn:hover
+            {   
+                background-color: #799535;
+                border-bottom: 4px inset #586c29;
+            }
+
+        }
+
+        .middleText .weMakeFood, .middleText span.boldText
+        {
+            text-shadow: 2px 2px 5px #0e0e0e;
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+    }
+
+
+    #secondHolder
+    {
+        background: url("../img/221.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .leftText
     {   
-        text-align: center;
-        font-size: 75px;
-        padding-top:100px ;
-        color: #FFF;  
+        width: 100px;
+        text-align: left;
+        font-size: 60px;
+        padding-top:90px ;
+        color: $maidanGreen;  
         
-        .weMakeFood
+        .title
         {
-            margin: auto;
-            padding-bottom: 20px;
-            width: 70%;
-            border-bottom: 1px solid #ffffff;
-        }
-
-        .textUnderTitle
-        {
-            padding-top: 20px;
-            font-size: 35px;
-        }
-
-        .joinBtn
-        {   
-            cursor: pointer;
-            color: #fff;
-            margin:50px auto;
-            font-size: 30px;
-            padding: 15px 100px;
-            width: 300px;
-            background-color: $maidanGreen;
-            border-bottom: 4px inset #769036;
-            -webkit-border-radius: 5px;
-                    border-radius: 5px;
-        }
-
-        .registerBtn:hover
-        {   
-            background-color: #799535;
-            border-bottom: 4px inset #586c29;
+            color: $maidanGreen; 
+            @extend .titleWidth;
         }
 
     }
 
-    .middleText .weMakeFood, .middleText span.boldText
+    #thirdHolder
     {
-        text-shadow: 2px 2px 5px #0e0e0e;
-        font-weight: bold;
-        font-style: italic;
-        text-transform: uppercase;
-    }
-}
-
-
-#secondHolder
-{
-    background: url("../img/221.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.leftText
-{   
-    width: 100px;
-    text-align: left;
-    font-size: 60px;
-    padding-top:90px ;
-    color: $maidanGreen;  
-    
-    .title
-    {
-        color: $maidanGreen; 
-        @extend .titleWidth;
+        background: url("../img/118.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-}
-
-#thirdHolder
-{
-    background: url("../img/118.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#thirdHolder .leftPic
-{
-    position: absolute;
-    background:#171c0a;
-    width: 500px;
-    height: 500px;
-}
-
-.rightText
-{   
-    width: 100px;
-    text-align: left;
-    font-size: 60px;
-    padding-top:90px;
-    padding-left: 650px;
-
-    color: #FFF;  
-    
-    .title
-    {
-        @extend .titleWidth;
-    }
-
-}
-
-
-#fourthHolder
-{
-    background: url("../img/bg_texture.png");
-    background-repeat: repeat;
-    width: 100%;
-    
-    .middleText
-    {
-        font-size: 70px;
-        padding-top: 70px;
-        color: #4a4a4a;
-        text-align: center;
-    }
-    
-    .rightPic
+    #thirdHolder .leftPic
     {
         position: absolute;
-        right:0px;
         background:#171c0a;
         width: 500px;
         height: 500px;
     }
 
-     nav.list
-    {
-        width: 100%;
-        padding-top: 50px;
-        margin: auto;
+    .rightText
+    {   
+        width: 100px;
+        text-align: left;
+        font-size: 60px;
+        padding-top:90px;
+        padding-left: 650px;
+
+        color: #FFF;  
         
-        ul
+        .title
         {
-            width:70%;
-            list-style:none;
-            margin: auto;
-           
-            li
-            {
-                display:inline;
-                margin-left: 80px;
-                float: left;
-                width: 150px;
-                
-                img
-                {
-                    height:100px;
-                }
-
-                .stepText
-                {
-                    padding-top: 20px;
-                    width:150px;
-                    font-size: 18px;
-                   
-                    span
-                    {
-                        font-weight: 900;
-                        font-size: 20px;
-                    }
-                }
-            } 
-
-            
-            
-            li:last-child
-            {
-                margin-right:0;
-            } 
-        }   
-    }
-
-    @media only screen and (min-width: 650px) 
-    {
-        height: 600px;
+            @extend .titleWidth;
+        }
 
     }
 
-    @media only screen and (max-width: 649px) 
+
+    #fourthHolder
     {
-        height: 1100px;
-
-    }
-
-}
-
-.footer-container
-{
-    margin-top: auto;
-
-    p
-    {
+        background: url("../img/bg_texture.png");
+        background-repeat: repeat;
         width: 100%;
-        text-align: center;
-        font-size: 12px;
-        font-weight: 100;
-        margin-top: 30px;
+        
+        .middleText
+        {
+            font-size: 70px;
+            padding-top: 70px;
+            color: #4a4a4a;
+            text-align: center;
+        }
+        
+        .rightPic
+        {
+            position: absolute;
+            right:0px;
+            background:#171c0a;
+            width: 500px;
+            height: 500px;
+        }
+
+         nav.list
+        {
+            width: 100%;
+            padding-top: 50px;
+            margin: auto;
+            
+            ul
+            {
+                width:70%;
+                list-style:none;
+                margin: auto;
+               
+                li
+                {
+                    display:inline;
+                    margin-left: 60px;
+                    float: left;
+                    width: 150px;
+                    
+                    img
+                    {
+                        height:70px;
+                    }
+
+                    .stepText
+                    {
+                        padding-top: 20px;
+                        width:150px;
+                        font-size: 18px;
+                       
+                        span
+                        {
+                            font-weight: 900;
+                            font-size: 20px;
+                        }
+                    }
+                } 
+
+                
+                
+                li:last-child
+                {
+                    margin-right:0;
+                } 
+            }   
+        }
+
+        @media only screen and (min-width: 650px) 
+        {
+            height: 600px;
+
+        }
+
+        @media only screen and (max-width: 649px) 
+        {
+            height: 1100px;
+
+        }
+
     }
 
-    .footerMap
+    .footer-container
     {
-        margin-top: 15px;
-        margin-bottom: 30px;
-        text-align: center;
-        a
+        margin-top: auto;
+
+        p
         {
-            margin-left: 2.5%;
-            margin-right: 2.5%;
-            color: #aaaaaa;
-            font-size: 15px;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 100;
+            margin-top: 30px;
         }
 
-        a:hover
+        .footerMap
         {
-            color: #FFF;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            a
+            {
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+                color: #aaaaaa;
+                font-size: 15px;
+            }
+
+            a:hover
+            {
+                color: #FFF;
+            }
         }
+
+        .footerLogo
+        {
+            text-align: center;
+        
+            img
+            {
+                height: 70px;
+            }
+        }
+
     }
-
-    .footerLogo
-    {
-        text-align: center;
-    
-        img
-        {
-            height: 70px;
-        }
-    }
-
-}
 
 
 
@@ -795,28 +805,45 @@ p
         font-size: 25px !important;
     }
 
+    .header-container
+    {
+        width:800px;
+    }
+
     .title
     {
-        width: 100%;
-        padding-top: 20px;
+        // width: 100%;
+        padding-top: 10px;
+        float: left;
+        padding-bottom: 10px;
         
         img
         {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            // margin-left: auto;
+            // margin-right: auto;
             height: 70px;
         }
     }
 
-
-    nav a
+    .topMenu
     {
-        background: #fff;
-        color: $maidanGreen;
+        float: right;
+
     }
 
 
+
+    // nav a
+    // {
+    //     background: #fff;
+    //     color: $maidanGreen;
+    // }
+    
+    body
+    {
+        width:800px;
+    }
 
 }
 
@@ -824,6 +851,29 @@ p
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 100px;
+        margin: 0 1.7%;
+        padding: 15px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+}
 
 @media only screen and (min-width: 480px) {
 
@@ -892,8 +942,6 @@ p
         float: right;
         width: 38%;
     }
-
-
 
 /* ============
     WIDE: Main

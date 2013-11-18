@@ -2,6 +2,12 @@
   font-family: 'myfont';
   src: url(../fonts/HelveticaNeue-UltraLight.eot); }
 
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Oswald Bold"), local("Oswald-Bold"), url(https://themes.googleusercontent.com/static/fonts/oswald/v7/bH7276GfdCjMjApa_dkG6bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
+
 a:hover {
   color: none; }
 
@@ -106,6 +112,10 @@ nav ul {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* menu */
+.menuHeader-container {
+  background: #fff; }
+
 /* register page */
 #registerForm {
   float: left;
@@ -299,10 +309,6 @@ nav a {
   color: #fff;
   background: #8eae3e; }
 
-nav a:hover,
-nav a:visited {
-  color: #ffffff; }
-
 nav a:hover {
   color: #171717;
   text-decoration: none; }
@@ -319,7 +325,7 @@ nav a:hover {
 
 .topMenu {
   font-size: 16px;
-  width: 500px;
+  width: 400px;
   padding-top: 25px; }
   .topMenu .registerBtn {
     color: white;
@@ -436,11 +442,11 @@ p {
       margin: auto; }
       #fourthHolder nav.list ul li {
         display: inline;
-        margin-left: 80px;
+        margin-left: 60px;
         float: left;
         width: 150px; }
         #fourthHolder nav.list ul li img {
-          height: 100px; }
+          height: 70px; }
         #fourthHolder nav.list ul li .stepText {
           padding-top: 20px;
           width: 150px;
@@ -488,21 +494,41 @@ p {
   .textUnderTitle {
     font-size: 25px !important; }
 
+  .header-container {
+    width: 800px; }
+
   .title {
-    width: 100%;
-    padding-top: 20px; }
+    padding-top: 10px;
+    float: left;
+    padding-bottom: 10px; }
     .title img {
       display: block;
-      margin-left: auto;
-      margin-right: auto;
       height: 70px; }
 
-  nav a {
-    background: #fff;
-    color: #8eae3e; } }
+  .topMenu {
+    float: right; }
+
+  body {
+    width: 800px; } }
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+@media only screen and (max-width: 480px) {
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  nav a {
+    float: left;
+    width: 100px;
+    margin: 0 1.7%;
+    padding: 15px 2%;
+    margin-bottom: 0; }
+
+  nav li:first-child a {
+    margin-left: 0; }
+
+  nav li:last-child a {
+    margin-right: 0; } }
 @media only screen and (min-width: 480px) {
   /* ====================
       INTERMEDIATE: Menu
