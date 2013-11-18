@@ -148,13 +148,153 @@ nav ul {
    Author's custom styles
    ========================================================================== */
 
-$maidanGreen: #8eae3e;
+$maidanGreen: #7caf3c;
 
 
 /* menu */
+
 .menuHeader-container
 {
     background: #fff;
+    border-bottom: thin solid #cdcdcd;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
+    box-shadow: 0 2px 4px rgba(0,0,0, 0.3);
+    
+    .menuNav
+    {
+        width:800px;
+        margin-left: 150px;
+        margin-top: 20px;
+        
+        .acInfo
+        {
+            font-size: 14px;
+            
+            
+            .acName
+            {
+                display: inline-block; 
+                
+                a 
+                {
+                    color: #585d5b;
+                }  
+            }
+
+            .acOrder
+            {
+                display: inline-block;  
+                margin-left: 50px;
+                
+                a 
+                {
+                    color: #585d5b;
+                } 
+            }
+        }
+    }
+
+    .dailyMenu
+    {
+        width: 800px;
+        margin-top: 5px;
+        font-size: 30px;
+        height: 85px;
+        
+        a
+        {
+            color: #585d5b;
+            padding-right: 20px;
+            border-right: 1px solid #585d5b;
+            padding-left: 20px ;
+            float: left;
+            width: 140px;
+            
+            p
+            {   
+                display: block;
+                font-size: 15px;
+                color: #585d5b;
+                    
+            }
+        }
+        
+        a.selected
+        {
+            color: $maidanGreen;
+            font-weight: bold;
+        }
+    }
+
+    .dailyMenu a:nth-child(1)
+    {
+        padding-left: 0px !important;
+    }
+
+    .dailyMenu a:last-child
+    {
+        border-right: none;
+    }
+
+}
+
+.item
+{
+    border: 1px solid #cdcdcd;
+    margin:20px 20px 0px 0px;
+    color: #171717;  
+    float: left;
+    width: 320px;
+    height: 338px;
+    background-color: #FFF;  
+    
+    .dishImage
+    {
+        top:0;
+        margin: 0;
+    }
+
+    .dishInfo
+    {
+        padding-top: 10px;
+        padding-left: 10px;
+        
+        .dishName
+        {   
+            font-weight: bold;
+        }
+
+        .restaurantName
+        {
+            color: #a6a6a6;
+        }
+    }   
+    
+    .dishPrice
+    {
+        text-align: right;
+        padding-right: 5px;
+        font-size: 17px;
+    }
+    
+    .addBtn
+    {
+        float: right;
+        width: 45px;
+        margin-right: 5px;
+        margin-top: 5px;
+        padding: 5px 10px;
+        background-color: $maidanGreen;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        
+        a
+        {
+            color: #FFF;
+        }
+    }
+
 }
 
 
@@ -750,7 +890,7 @@ nav a:hover {
 
     .footer-container
     {
-        margin-top: auto;
+        margin-top: 50px;
 
         p
         {

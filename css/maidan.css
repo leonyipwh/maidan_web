@@ -114,7 +114,83 @@ nav ul {
    ========================================================================== */
 /* menu */
 .menuHeader-container {
-  background: #fff; }
+  background: #fff;
+  border-bottom: thin solid #cdcdcd;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+  .menuHeader-container .menuNav {
+    width: 800px;
+    margin-left: 150px;
+    margin-top: 20px; }
+    .menuHeader-container .menuNav .acInfo {
+      font-size: 14px; }
+      .menuHeader-container .menuNav .acInfo .acName {
+        display: inline-block; }
+        .menuHeader-container .menuNav .acInfo .acName a {
+          color: #585d5b; }
+      .menuHeader-container .menuNav .acInfo .acOrder {
+        display: inline-block;
+        margin-left: 50px; }
+        .menuHeader-container .menuNav .acInfo .acOrder a {
+          color: #585d5b; }
+  .menuHeader-container .dailyMenu {
+    width: 800px;
+    margin-top: 5px;
+    font-size: 30px;
+    height: 85px; }
+    .menuHeader-container .dailyMenu a {
+      color: #585d5b;
+      padding-right: 20px;
+      border-right: 1px solid #585d5b;
+      padding-left: 20px;
+      float: left;
+      width: 140px; }
+      .menuHeader-container .dailyMenu a p {
+        display: block;
+        font-size: 15px;
+        color: #585d5b; }
+    .menuHeader-container .dailyMenu a.selected {
+      color: #7caf3c;
+      font-weight: bold; }
+  .menuHeader-container .dailyMenu a:nth-child(1) {
+    padding-left: 0px !important; }
+  .menuHeader-container .dailyMenu a:last-child {
+    border-right: none; }
+
+.item {
+  border: 1px solid #cdcdcd;
+  margin: 20px 20px 0px 0px;
+  color: #171717;
+  float: left;
+  width: 320px;
+  height: 338px;
+  background-color: #FFF; }
+  .item .dishImage {
+    top: 0;
+    margin: 0; }
+  .item .dishInfo {
+    padding-top: 10px;
+    padding-left: 10px; }
+    .item .dishInfo .dishName {
+      font-weight: bold; }
+    .item .dishInfo .restaurantName {
+      color: #a6a6a6; }
+  .item .dishPrice {
+    text-align: right;
+    padding-right: 5px;
+    font-size: 17px; }
+  .item .addBtn {
+    float: right;
+    width: 45px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #7caf3c;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    .item .addBtn a {
+      color: #FFF; }
 
 /* register page */
 #registerForm {
@@ -124,7 +200,7 @@ nav ul {
   margin-bottom: 50px; }
   #registerForm .title {
     width: 100%;
-    color: #8eae3e;
+    color: #7caf3c;
     font-size: 40px;
     margin-bottom: 30px; }
   #registerForm .loginText {
@@ -136,7 +212,7 @@ nav ul {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     color: #FFF;
-    background-color: #8eae3e;
+    background-color: #7caf3c;
     margin-left: 20px; }
   #registerForm .registerField {
     font-size: 18px; }
@@ -149,7 +225,7 @@ nav ul {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   color: #FFF;
-  background-color: #8eae3e; }
+  background-color: #7caf3c; }
 
 .continueBtn:hover {
   color: #FFF; }
@@ -184,7 +260,7 @@ nav ul {
   text-align: center;
   float: none; }
   #centerContent .topTitle {
-    color: #8eae3e;
+    color: #7caf3c;
     font-size: 45px;
     margin-top: 50px;
     text-align: center; }
@@ -201,7 +277,7 @@ nav ul {
         font-size: 14px;
         margin-left: 30px; }
       #centerContent .customerInfoContainer .contact .editLocation a {
-        color: #8eae3e; }
+        color: #7caf3c; }
       #centerContent .customerInfoContainer .contact .editLocation a:hover {
         color: #728c32; }
       #centerContent .customerInfoContainer .contact .lable {
@@ -225,9 +301,9 @@ nav ul {
 
 /* Contact Us */
 .highlightText a {
-  color: #8eae3e; }
+  color: #7caf3c; }
 .highlightText a:hover {
-  color: #8eae3e; }
+  color: #7caf3c; }
 
 /* FAQ */
 #faqTopBanner {
@@ -245,10 +321,10 @@ nav ul {
     margin-top: 30px;
     color: #7a7a7a; }
   .questionContainer .question.opened {
-    color: #8eae3e;
+    color: #7caf3c;
     font-size: 24px; }
   .questionContainer .question:hover {
-    color: #8eae3e;
+    color: #7caf3c;
     cursor: pointer; }
   .questionContainer .answer {
     display: none;
@@ -273,7 +349,7 @@ nav ul {
   #content .leftContent .title {
     font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 30px;
-    color: #8eae3e;
+    color: #7caf3c;
     float: none; }
   #content .leftContent p {
     padding-top: 20px;
@@ -292,7 +368,7 @@ nav ul {
       padding-left: 20px; }
       #content .rightContent .sideNav ul li .selected {
         font-size: 20px;
-        color: #8eae3e; }
+        color: #7caf3c; }
       #content .rightContent .sideNav ul li a {
         background-color: #fff;
         color: #515151; }
@@ -307,14 +383,14 @@ nav a {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  background: #8eae3e; }
+  background: #7caf3c; }
 
 nav a:hover {
   color: #171717;
   text-decoration: none; }
 
 .header-container {
-  background: #8eae3e; }
+  background: #7caf3c; }
 
 .footer-container,
 .main aside {
@@ -371,7 +447,7 @@ p {
       font-size: 30px;
       padding: 15px 100px;
       width: 300px;
-      background-color: #8eae3e;
+      background-color: #7caf3c;
       border-bottom: 4px inset #769036;
       -webkit-border-radius: 5px;
       border-radius: 5px; }
@@ -394,9 +470,9 @@ p {
   text-align: left;
   font-size: 60px;
   padding-top: 90px;
-  color: #8eae3e; }
+  color: #7caf3c; }
   .leftText .title {
-    color: #8eae3e; }
+    color: #7caf3c; }
 
 #thirdHolder {
   background: url("../img/118.jpg");
@@ -464,7 +540,7 @@ p {
       height: 1100px; } }
 
 .footer-container {
-  margin-top: auto; }
+  margin-top: 50px; }
   .footer-container p {
     width: 100%;
     text-align: center;
