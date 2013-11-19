@@ -120,9 +120,15 @@ textarea {
         display: block;
         font-size: 15px;
         color: #585d5b; }
-    .menuHeader-container .dailyMenu a.selected {
+    .menuHeader-container .dailyMenu a.selectedDate {
       color: #7caf3c;
       font-weight: bold; }
+    .menuHeader-container .dailyMenu .bottomLine {
+      display: none;
+      position: inherit;
+      margin-top: 20px;
+      width: 100%;
+      border-bottom: 5px solid #7caf3c; }
   .menuHeader-container .dailyMenu a:nth-child(1) {
     padding-left: 0px !important; }
   .menuHeader-container .dailyMenu a:last-child {
@@ -137,11 +143,12 @@ textarea {
   color: #171717;
   float: left;
   width: 320px;
-  height: 338px;
   background-color: #FFF; }
   .item .dishImage {
     top: 0;
     margin: 0; }
+    .item .dishImage img {
+      width: 318px; }
   .item .dishInfo {
     padding-top: 10px;
     padding-left: 10px; }
@@ -152,7 +159,8 @@ textarea {
       color: #737373; }
   .item .priceAndAdd {
     text-align: right;
-    margin-top: 17px; }
+    margin-top: 15px;
+    margin-bottom: 5px; }
     .item .priceAndAdd .dishPrice {
       display: inline-block;
       font-size: 17px;

@@ -50,14 +50,14 @@
                         <div class="acOrder"><a href="#">My Order</a></div>
                     </div>
                     <div class="dailyMenu">
-                        <a id="todayMenu" class="selected" href="menu.html">Today<p>Before 10 a.m.</p>
+                        <a id="todayMenu" class="selectedDate" href="menu.html">Today<p>Before 10 a.m.</p>
                             <div class="bottomLine"></div>
                         </a>
 
-                        <a id="d2Menu" href="d2.html">Tue<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 19</span></p></a>
-                        <a id="d3Menu" href="d3.html">Wed<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 20</span></p></a>
-                        <a id="d4Menu" href="d4.html">Thu<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 21</span></p></a>
-                        <a id="d5Menu" href="d5.html">Fri<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 22</span></p></a>
+                        <a id="d2Menu" href="d2.html">Tue<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 19</span></p><div class="bottomLine"></div></a>
+                        <a id="d3Menu" href="d3.html">Wed<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 20</span></p><div class="bottomLine"></div></a>
+                        <a id="d4Menu" href="d4.html">Thu<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 21</span></p><div class="bottomLine"></div></a>
+                        <a id="d5Menu" href="d5.html">Fri<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 22</span></p><div class="bottomLine"></div></a>
                     </div>
                 </div>
             </header>
@@ -69,7 +69,7 @@
                     
                     <div id="dish1" class="item">
                         <div class="dishImage">
-                            <img src="https://www.myeatclub.com/im/2645/320x230/">
+                            <img src="https://farm1.maidan.hk/restaurant/thumbnail/3.jpg">
                         </div>
                         <div class="dishInfo">
                             <div class="dishName">Gluten-Free Chicken Florentina</div>
@@ -82,7 +82,7 @@
                     </div>
                     <div id="dish1" class="item">
                         <div class="dishImage">
-                            <img src="https://www.myeatclub.com/im/2689/320x230/">
+                            <img src="https://farm1.maidan.hk/restaurant/thumbnail/22.jpg">
                         </div>
                         <div class="dishInfo">
                             <div class="dishName">Gluten-Free Chicken Florentina</div>
@@ -95,7 +95,7 @@
                     </div>
                     <div id="dish1" class="item">
                         <div class="dishImage">
-                            <img src="https://www.myeatclub.com/im/1083/320x230/">
+                            <img src="https://farm1.maidan.hk/restaurant/thumbnail/25.jpg">
                         </div>
                         <div class="dishInfo">
                             <div class="dishName">Gluten-Free Chicken Florentina</div>
@@ -108,7 +108,7 @@
                     </div>
                     <div id="dish1" class="item">
                         <div class="dishImage">
-                            <img src="https://www.myeatclub.com/im/1530/320x230/">
+                            <img src="https://farm1.maidan.hk/restaurant/thumbnail/29.jpg">
                         </div>
                         <div class="dishInfo">
                             <div class="dishName">Gluten-Free Chicken Florentina</div>
@@ -146,6 +146,14 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+                <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                
+        
+                $(".selectedDate").find(".bottomLine").show();
+            });
+        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
