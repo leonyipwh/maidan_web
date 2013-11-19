@@ -1,7 +1,28 @@
 @font-face {
-    font-family: 'myfont';
-    src: url(../fonts/HelveticaNeue-UltraLight.eot);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
 @font-face {
   font-family: 'Oswald';
   font-style: normal;
@@ -79,9 +100,6 @@ textarea {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
-body {
- font-family: Helvetica Neue;
-}
 
 .wrapper {
     width: 90%;
@@ -92,12 +110,6 @@ body {
     ALL: Orange Theme
    =================== */
 
-.header-container {
-/*    border-bottom: 1px solid #fafafb;*/
-}
-
-
-.footer-container,
 .main aside {
     border-top: 1px solid #fafafb;
 }
@@ -225,6 +237,11 @@ $maidanGreen: #7caf3c;
             color: $maidanGreen;
             font-weight: bold;
         }
+
+        .bottomLine
+        {
+           
+        }
     }
 
     .dailyMenu a:nth-child(1)
@@ -237,6 +254,11 @@ $maidanGreen: #7caf3c;
         border-right: none;
     }
 
+}
+
+#content .item:last-child
+{
+    margin-bottom: 50px;
 }
 
 .item
@@ -267,33 +289,43 @@ $maidanGreen: #7caf3c;
 
         .restaurantName
         {
-            color: #a6a6a6;
+            padding-top: 5px;
+            color: #737373;
         }
     }   
     
-    .dishPrice
+    .priceAndAdd
     {
         text-align: right;
-        padding-right: 5px;
-        font-size: 17px;
+        margin-top: 17px;
+
+        .dishPrice
+        {
+            display: inline-block;
+            font-size: 17px;
+            padding-right: 5px;
+        }
+    
+        .addBtn
+        {
+           display: inline-block;
+            width: 45px;
+            margin-right: 5px;
+            margin-top: 5px;
+            padding: 5px 10px;
+            background-color: $maidanGreen;
+            -webkit-border-radius: 5px;
+                    border-radius: 5px;
+            
+            a
+            {
+                color: #FFF;
+            }
+        }
+        
     }
     
-    .addBtn
-    {
-        float: right;
-        width: 45px;
-        margin-right: 5px;
-        margin-top: 5px;
-        padding: 5px 10px;
-        background-color: $maidanGreen;
-        -webkit-border-radius: 5px;
-                border-radius: 5px;
-        
-        a
-        {
-            color: #FFF;
-        }
-    }
+
 
 }
 
@@ -313,6 +345,7 @@ $maidanGreen: #7caf3c;
         color: $maidanGreen;
         font-size: 40px;
         margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     .loginText
@@ -563,6 +596,7 @@ $maidanGreen: #7caf3c;
             font-size: 30px;
             color: $maidanGreen;
             float: none;
+            width: 500px;
         }
 
         p
@@ -598,27 +632,24 @@ $maidanGreen: #7caf3c;
                     {
                         font-size: 20px;    
                         color: $maidanGreen;
+
                     }
 
                     a
                     {
+                        width: 130px;
                         background-color: #fff;
                         color: #515151;
                     }
-                    
                 }
-
             }
         }
-        
     }
 }
 
 
-
 /* Index */
 nav a {
-    font-family: 'Lato' !important;
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
@@ -626,8 +657,7 @@ nav a {
     text-align: center;
     text-decoration: none;
 
-    color: #fff;
-    background: $maidanGreen;
+    color: $maidanGreen;
 }
 
 
@@ -639,7 +669,7 @@ nav a:hover {
 
 .header-container
 {
-    background: $maidanGreen;
+    background: white;
 }
 .footer-container,
 .main aside {
@@ -653,12 +683,11 @@ nav a:hover {
 
 .topMenu
 {
-
     font-size: 16px;
     width:400px;
-    padding-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-    
     .registerBtn
     {
         color: white;
@@ -666,8 +695,7 @@ nav a:hover {
         -webkit-border-radius: 5px;
                 border-radius: 5px;
         border-bottom: 3px inset #516323;
-        padding-right:20px;
-        padding-left: 20px;
+        text-align: center;
     }
 
 }
@@ -890,7 +918,7 @@ nav a:hover {
 
     .footer-container
     {
-        margin-top: 50px;
+        margin-top: auto;
 
         p
         {
@@ -936,33 +964,37 @@ nav a:hover {
 
 @media only screen and (max-width: 768px) 
 {
-    .weMakeFood
-    {
-        font-size: 50px;
-    }
-    .textUnderTitle
-    {
-        font-size: 25px !important;
-    }
+    // .weMakeFood
+    // {
+    //     font-size: 50px;
+    // }
+    // .textUnderTitle
+    // {
+    //     font-size: 25px !important;
+    // }
 
     .header-container
     {
         width:800px;
     }
 
-    .title
+    .title 
     {
-        // width: 100%;
-        padding-top: 10px;
         float: left;
-        padding-bottom: 10px;
-        
-        img
+        display: inline-block;
+        width: 190px;
+
+        img 
         {
-            display: block;
-            // margin-left: auto;
-            // margin-right: auto;
-            height: 70px;
+            position: absolute;
+            background-color:  white;
+            height: 100px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            -webkit-border-radius: 5px;
+                    border-radius: 5px;
         }
     }
 
@@ -972,14 +1004,6 @@ nav a:hover {
 
     }
 
-
-
-    // nav a
-    // {
-    //     background: #fff;
-    //     color: $maidanGreen;
-    // }
-    
     body
     {
         width:800px;
@@ -1002,7 +1026,7 @@ nav a:hover {
         float: left;
         width: 100px;
         margin: 0 1.7%;
-        padding: 15px 2%;
+        padding: 10px;
         margin-bottom: 0;
     }
 
@@ -1025,7 +1049,7 @@ nav a:hover {
         float: left;
         width: 100px;
         margin: 0 1.7%;
-        padding: 15px 2%;
+        padding: 10px;
         margin-bottom: 0;
     }
 
@@ -1068,14 +1092,24 @@ nav a:hover {
     WIDE: Menu
    ============ */
 
-    .title {
+    .title 
+    {
         float: left;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
+        display: inline-block;
+        width: 190px;
 
-    .title img {
-        height: 70px;
+        img 
+        {
+            position: absolute;
+            background-color:  white;
+            height: 100px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            -webkit-border-radius: 5px;
+                    border-radius: 5px;
+        }
     }
 
     nav {

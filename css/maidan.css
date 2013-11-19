@@ -1,6 +1,26 @@
 @font-face {
-  font-family: 'myfont';
-  src: url(../fonts/HelveticaNeue-UltraLight.eot); }
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format("woff"); }
 
 @font-face {
   font-family: 'Oswald';
@@ -62,9 +82,6 @@ textarea {
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
-body {
-  font-family: Helvetica Neue; }
-
 .wrapper {
   width: 90%;
   margin: 0 5%; }
@@ -72,10 +89,6 @@ body {
 /* ===================
     ALL: Orange Theme
    =================== */
-.header-container {
-  /*    border-bottom: 1px solid #fafafb;*/ }
-
-.footer-container,
 .main aside {
   border-top: 1px solid #fafafb; }
 
@@ -158,6 +171,9 @@ nav ul {
   .menuHeader-container .dailyMenu a:last-child {
     border-right: none; }
 
+#content .item:last-child {
+  margin-bottom: 50px; }
+
 .item {
   border: 1px solid #cdcdcd;
   margin: 20px 20px 0px 0px;
@@ -175,22 +191,26 @@ nav ul {
     .item .dishInfo .dishName {
       font-weight: bold; }
     .item .dishInfo .restaurantName {
-      color: #a6a6a6; }
-  .item .dishPrice {
+      padding-top: 5px;
+      color: #737373; }
+  .item .priceAndAdd {
     text-align: right;
-    padding-right: 5px;
-    font-size: 17px; }
-  .item .addBtn {
-    float: right;
-    width: 45px;
-    margin-right: 5px;
-    margin-top: 5px;
-    padding: 5px 10px;
-    background-color: #7caf3c;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; }
-    .item .addBtn a {
-      color: #FFF; }
+    margin-top: 17px; }
+    .item .priceAndAdd .dishPrice {
+      display: inline-block;
+      font-size: 17px;
+      padding-right: 5px; }
+    .item .priceAndAdd .addBtn {
+      display: inline-block;
+      width: 45px;
+      margin-right: 5px;
+      margin-top: 5px;
+      padding: 5px 10px;
+      background-color: #7caf3c;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
+      .item .priceAndAdd .addBtn a {
+        color: #FFF; }
 
 /* register page */
 #registerForm {
@@ -202,7 +222,8 @@ nav ul {
     width: 100%;
     color: #7caf3c;
     font-size: 40px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    margin-top: 30px; }
   #registerForm .loginText {
     font-size: 18px;
     margin-bottom: 50px; }
@@ -350,7 +371,8 @@ nav ul {
     font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 30px;
     color: #7caf3c;
-    float: none; }
+    float: none;
+    width: 500px; }
   #content .leftContent p {
     padding-top: 20px;
     padding-bottom: 100px;
@@ -370,27 +392,26 @@ nav ul {
         font-size: 20px;
         color: #7caf3c; }
       #content .rightContent .sideNav ul li a {
+        width: 130px;
         background-color: #fff;
         color: #515151; }
 
 /* Index */
 nav a {
-  font-family: 'Lato' !important;
   display: block;
   margin-bottom: 10px;
   padding: 15px 0;
   width: 72%;
   text-align: center;
   text-decoration: none;
-  color: #fff;
-  background: #7caf3c; }
+  color: #7caf3c; }
 
 nav a:hover {
   color: #171717;
   text-decoration: none; }
 
 .header-container {
-  background: #7caf3c; }
+  background: white; }
 
 .footer-container,
 .main aside {
@@ -402,15 +423,15 @@ nav a:hover {
 .topMenu {
   font-size: 16px;
   width: 400px;
-  padding-top: 25px; }
+  padding-top: 10px;
+  padding-bottom: 10px; }
   .topMenu .registerBtn {
     color: white;
     background-color: #62792b;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     border-bottom: 3px inset #516323;
-    padding-right: 20px;
-    padding-left: 20px; }
+    text-align: center; }
 
 p {
   width: 400px; }
@@ -540,7 +561,7 @@ p {
       height: 1100px; } }
 
 .footer-container {
-  margin-top: 50px; }
+  margin-top: auto; }
   .footer-container p {
     width: 100%;
     text-align: center;
@@ -564,22 +585,23 @@ p {
       height: 70px; }
 
 @media only screen and (max-width: 768px) {
-  .weMakeFood {
-    font-size: 50px; }
-
-  .textUnderTitle {
-    font-size: 25px !important; }
-
   .header-container {
     width: 800px; }
 
   .title {
-    padding-top: 10px;
     float: left;
-    padding-bottom: 10px; }
+    display: inline-block;
+    width: 190px; }
     .title img {
-      display: block;
-      height: 70px; }
+      position: absolute;
+      background-color: white;
+      height: 100px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 5px;
+      padding-left: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
 
   .topMenu {
     float: right; }
@@ -597,7 +619,7 @@ p {
     float: left;
     width: 100px;
     margin: 0 1.7%;
-    padding: 15px 2%;
+    padding: 10px;
     margin-bottom: 0; }
 
   nav li:first-child a {
@@ -613,7 +635,7 @@ p {
     float: left;
     width: 100px;
     margin: 0 1.7%;
-    padding: 15px 2%;
+    padding: 10px;
     margin-bottom: 0; }
 
   nav li:first-child a {
@@ -644,11 +666,18 @@ p {
      ============ */
   .title {
     float: left;
-    padding-top: 15px;
-    padding-bottom: 15px; }
-
-  .title img {
-    height: 70px; }
+    display: inline-block;
+    width: 190px; }
+    .title img {
+      position: absolute;
+      background-color: white;
+      height: 100px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 5px;
+      padding-left: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
 
   nav {
     float: right;
