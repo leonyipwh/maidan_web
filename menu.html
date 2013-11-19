@@ -44,17 +44,31 @@
                 <div class="title">
                     <a href="index.html"><img src="http://m.maidan.hk/images/logo.png"/></a>
                 </div>
+                <div id="cart" onmouseover="showPopUp()" onmouseout="hidePopUp()" ><img src="img/cart.png">
+                    <div id="popUp">
+                        <div class="header">Add items from below to start your order.</div>
+                        <div class="subHeader">Remember to order early before the favorites sell out!</div>
+                        <div class="popUpBtnContainer" >
+                            <a id="keepShoppingBtn" href="">Keep Shopping</a>
+                            <a id="checkoutBtn" href="">Checkout</a>
+                        </div>
+                    <div class="promocode"><a href="#">Do you have a promo code?</a></div>
+                </div>
+                </div>
+
                 <div class="menuNav">
                     <div class="acInfo">
                         <div class="acName"><a href="#">William Li</a></div>
                         <div class="acOrder"><a href="#">My Order</a></div>
                     </div>
                     <div class="dailyMenu">
-                        <a id="todayMenu" class="selectedDate" href="menu.html">Today<p>Before 10 a.m.</p>
+                  
+                        <a id="todayMenu" class="selectedDate" href="menu.html">Today's Menu
+                            <p>Before 10 a.m.</p>
                             <div class="bottomLine"></div>
-                        </a>
+                        </a> 
 
-                        <a id="d2Menu" href="d2.html">Tue<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 19</span></p><div class="bottomLine"></div></a>
+                        <a id="d2Menu"  href="d2.html">Tue<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 19</span></p><div class="bottomLine"></div></a>
                         <a id="d3Menu" href="d3.html">Wed<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 20</span></p><div class="bottomLine"></div></a>
                         <a id="d4Menu" href="d4.html">Thu<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 21</span></p><div class="bottomLine"></div></a>
                         <a id="d5Menu" href="d5.html">Fri<p><span class="month">Nov</span>&nbsp;&nbsp;<span class="date"> 22</span></p><div class="bottomLine"></div></a>
@@ -147,12 +161,23 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-                <script type="text/javascript">
+        <script type="text/javascript">
+            
             jQuery(document).ready(function($) {
-                
-        
-                $(".selectedDate").find(".bottomLine").show();
+
+            $(".selectedDate").find(".bottomLine").show();
             });
+
+            function showPopUp()
+            {
+                $("#popUp").show();
+            }
+
+            function hidePopUp()
+            {
+                $("#popUp").hide();
+            }
+
         </script>
 
         <script>

@@ -107,10 +107,6 @@
                                     Currently maiDan delivers during the lunch hour only. We may offer services on nights and weekends as we expand. This will be determined at a future date.
                                 </div>
                             </div>
-
-
-
-
                     </div>
                     <div class="rightContent">
                         <nav class="sideNav">
@@ -124,10 +120,8 @@
                         </nav>
                     </div>
                 </div>
-
             </div> <!-- #main -->
         </div> <!-- #main-container -->
-        <br><br><br><br><br>
         <div class="footer-container">
             <footer class="wrapper">
                 <div class="footerMap">
@@ -166,7 +160,7 @@
                 var activeBlock = $('.question.opened');
                 activeBlock.removeClass('opened');
                 
-                activeBlock.parent().children(".answer").slideUp();
+                activeBlock.parent().children(".answer").slideUp(100);
             }
 
             function openDropdown(questionBlock)
@@ -175,7 +169,7 @@
                 {
                     closeOpenedDropbox();
                     $(questionBlock).addClass('opened');
-                    $(questionBlock).parent().children(".answer").slideDown();
+                    $(questionBlock).parent().children(".answer").slideDown(100);
                 }
                 else
                 {
