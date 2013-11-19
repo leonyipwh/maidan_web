@@ -117,12 +117,14 @@ textarea {
       border-radius: 5px;
       width: 130px; }
     #popUp .popUpBtnContainer #keepShoppingBtn {
+      text-transform: uppercase;
       background: #45C3D4;
       text-align: center;
       padding: 10px 0;
       display: inline-block;
       color: white; }
     #popUp .popUpBtnContainer #checkoutBtn {
+      text-transform: uppercase;
       text-align: center;
       display: inline-block;
       padding: 10px 0;
