@@ -102,13 +102,49 @@ textarea {
 $maidanGreen: #7caf3c;
 $bgGrey: #f0f0f0;
 
+
+.marginForFooter
+{
+    height: 70px;
+    background:#f0f0f0;
+}
+
+/* Terms */
+
+.updatedTime
+{
+    color: #808080;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.text
+{
+    margin-top: 20px;
+    font-size: 15px; 
+    line-height: 20px;
+    font-weight: 200;
+    color: #808080;
+}
+
+.topic
+{
+    color: #6e6e6e;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+
 /* menu */
 
 #cart
 {
-    position: absolute;
-    right: 163px;
-    top: 60px;
+    float:right;
+    margin-top: 65px;
 }
 
 #cart img:hover
@@ -120,15 +156,15 @@ $bgGrey: #f0f0f0;
 {
     display: none;
     position: absolute;
-    top:45px;
-    right: 0px;
-    width:300px;
+    width: 337px;
+    margin-left: -287px;
     height: 200px;
     background-color: #FFF;
     border-top: 6px solid $maidanGreen;
     z-index: 10;
     padding: 10px;
     color: #444444;
+
     
     .header
     {
@@ -252,7 +288,17 @@ $bgGrey: #f0f0f0;
         {
             color: $maidanGreen;
             font-weight: bold;
-            width: 230px;
+            width: 330px;
+        }
+
+        #d2Menu.selectedDate
+        {
+            width: 300px !important;
+        }
+
+        #d3Menu.selectedDate
+        {
+            width: 350px !important;
         }
 
         .bottomLine
@@ -263,11 +309,42 @@ $bgGrey: #f0f0f0;
             width: 100%;
             border-bottom: 6px solid $maidanGreen;
         }
+
+        #todayMenu .bottomLine
+        {
+            width: 210px;
+        }
+
+        #d2Menu .bottomLine
+        {
+            width: 240px !important;
+        }
+
+        #d3Menu .bottomLine
+        {
+            width: 290px !important;
+        }
+
+        #d4Menu .bottomLine
+        {
+            width: 260px !important;
+        }
+
+        #d5Menu .bottomLine
+        {
+            width: 210px !important;
+        }
     }
 
     .dailyMenu a:nth-child(1)
     {
+        width: 90px;
         padding-left: 0px !important;
+    }
+
+    .dailyMenu #todayMenu.selectedDate
+    {
+        width: 240px !important;
     }
 
     .dailyMenu a:last-child
@@ -619,8 +696,8 @@ $bgGrey: #f0f0f0;
         
         .title
         {
-            font-family: "Open Sans", Helvetica, sans-serif;
-            font-size: 30px;
+            font-size: 34px;
+            font-weight: 200;
             color: $maidanGreen;
             float: none;
             width: 500px;
@@ -985,14 +1062,6 @@ nav a:hover {
 
 @media only screen and (max-width: 768px) 
 {
-    // .weMakeFood
-    // {
-    //     font-size: 50px;
-    // }
-    // .textUnderTitle
-    // {
-    //     font-size: 25px !important;
-    // }
 
     .header-container
     {
@@ -1027,7 +1096,7 @@ nav a:hover {
 
     body
     {
-        width:800px;
+        width:960px;
     }
 
 }
@@ -1040,7 +1109,7 @@ nav a:hover {
 
 
 .wrapper {
-    width: 90%;
+    width: 1026px;
     margin: 0 5%;
 }
 
@@ -1068,7 +1137,7 @@ nav ul {
    ============== */
 
 .main {
-    padding: 0px 0px 90px 0px  ;
+    padding: 0px 0px 0px 0px  ;
     background-color: $bgGrey;
 }
 

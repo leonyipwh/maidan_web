@@ -82,11 +82,36 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.marginForFooter {
+  height: 70px;
+  background: #f0f0f0; }
+
+/* Terms */
+.updatedTime {
+  color: #808080;
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 200;
+  margin-bottom: 30px; }
+
+.text {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 200;
+  color: #808080; }
+
+.topic {
+  color: #6e6e6e;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 200; }
+
 /* menu */
 #cart {
-  position: absolute;
-  right: 163px;
-  top: 60px; }
+  float: right;
+  margin-top: 65px; }
 
 #cart img:hover {
   cursor: pointer; }
@@ -94,9 +119,8 @@ textarea {
 #popUp {
   display: none;
   position: absolute;
-  top: 45px;
-  right: 0px;
-  width: 300px;
+  width: 337px;
+  margin-left: -287px;
   height: 200px;
   background-color: #FFF;
   border-top: 6px solid #7caf3c;
@@ -175,15 +199,32 @@ textarea {
     .menuHeader-container .dailyMenu a.selectedDate {
       color: #7caf3c;
       font-weight: bold;
-      width: 230px; }
+      width: 330px; }
+    .menuHeader-container .dailyMenu #d2Menu.selectedDate {
+      width: 300px !important; }
+    .menuHeader-container .dailyMenu #d3Menu.selectedDate {
+      width: 350px !important; }
     .menuHeader-container .dailyMenu .bottomLine {
       display: none;
       position: inherit;
       margin-top: 18px;
       width: 100%;
       border-bottom: 6px solid #7caf3c; }
+    .menuHeader-container .dailyMenu #todayMenu .bottomLine {
+      width: 210px; }
+    .menuHeader-container .dailyMenu #d2Menu .bottomLine {
+      width: 240px !important; }
+    .menuHeader-container .dailyMenu #d3Menu .bottomLine {
+      width: 290px !important; }
+    .menuHeader-container .dailyMenu #d4Menu .bottomLine {
+      width: 260px !important; }
+    .menuHeader-container .dailyMenu #d5Menu .bottomLine {
+      width: 210px !important; }
   .menuHeader-container .dailyMenu a:nth-child(1) {
+    width: 90px;
     padding-left: 0px !important; }
+  .menuHeader-container .dailyMenu #todayMenu.selectedDate {
+    width: 240px !important; }
   .menuHeader-container .dailyMenu a:last-child {
     border-right: none; }
 
@@ -389,8 +430,8 @@ textarea {
   width: 70%;
   margin-right: 100px; }
   #content .leftContent .title {
-    font-family: "Open Sans", Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 34px;
+    font-weight: 200;
     color: #7caf3c;
     float: none;
     width: 500px; }
@@ -624,12 +665,12 @@ nav a:hover {
     float: right; }
 
   body {
-    width: 800px; } }
+    width: 960px; } }
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 .wrapper {
-  width: 90%;
+  width: 1026px;
   margin: 0 5%; }
 
 /* ===================
@@ -649,7 +690,7 @@ nav ul {
     MOBILE: Main
    ============== */
 .main {
-  padding: 0px 0px 90px 0px;
+  padding: 0px 0px 0px 0px;
   background-color: #f0f0f0; }
 
 .main article h1 {
