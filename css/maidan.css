@@ -168,13 +168,58 @@ textarea {
   .menuHeader-container .menuNav {
     width: 800px;
     margin-left: 150px;
-    margin-top: 20px; }
+    margin-top: 15px; }
     .menuHeader-container .menuNav .acInfo {
-      font-size: 14px; }
+      font-size: 15px;
+      margin-top: -10px;
+      margin-left: -10px;
+      font-size: 16px; }
       .menuHeader-container .menuNav .acInfo .acName {
-        display: inline-block; }
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        font-weight: 400;
+        border: 1px solid transparent;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px; }
         .menuHeader-container .menuNav .acInfo .acName a {
-          color: #585d5b; }
+          color: #909090; }
+          .menuHeader-container .menuNav .acInfo .acName a i {
+            vertical-align: text-top; }
+        .menuHeader-container .menuNav .acInfo .acName a .hi, .menuHeader-container .menuNav .acInfo .acName a .userName {
+          color: #000000; }
+      .menuHeader-container .menuNav .acInfo #dropdown-menu {
+        display: none;
+        position: absolute;
+        list-style: none;
+        background-color: #FFF;
+        z-index: 10;
+        height: auto;
+        border-bottom: 1px solid #c3c3c3;
+        border-right: 1px solid #c3c3c3;
+        border-left: 1px solid #c3c3c3;
+        margin-left: -11px;
+        margin-top: 16px;
+        padding-left: 0px; }
+        .menuHeader-container .menuNav .acInfo #dropdown-menu li {
+          position: relative;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          padding-left: 10px;
+          width: 226px;
+          text-align: left;
+          border-bottom: 1px solid #eeeeee; }
+          .menuHeader-container .menuNav .acInfo #dropdown-menu li a {
+            display: block;
+            width: 100%; }
+          .menuHeader-container .menuNav .acInfo #dropdown-menu li a:hover {
+            color: #7caf3c; }
+      .menuHeader-container .menuNav .acInfo .acName:hover {
+        border: 1px solid #c3c3c3;
+        border-bottom: 1px solid #eeeeee; }
+        .menuHeader-container .menuNav .acInfo .acName:hover #dropdown-menu {
+          display: block; }
       .menuHeader-container .menuNav .acInfo .acOrder {
         display: inline-block;
         margin-left: 50px; }
@@ -182,7 +227,7 @@ textarea {
           color: #585d5b; }
   .menuHeader-container .dailyMenu {
     width: 800px;
-    margin-top: 10px;
+    margin-top: 0px;
     font-size: 30px;
     height: 80px; }
     .menuHeader-container .dailyMenu a {
@@ -769,7 +814,8 @@ nav ul {
   .title {
     float: left;
     display: inline-block;
-    width: 190px; }
+    width: 130px;
+    margin-top: 15px; }
     .title img {
       position: absolute;
       background-color: white;
