@@ -103,6 +103,87 @@ $maidanGreen: #7caf3c;
 $bgGrey: #f0f0f0;
 
 
+/* dish */
+
+#dishContainer
+{
+    width: 960px;
+    background-color: #FFF;
+    padding: 40px;
+    
+    #innerContainer
+    {
+        background-color: #FDFCF8;
+        margin-right: 15px;
+        -webkit-box-shadow:0px 1px 2px #D3CFCC;
+        box-shadow: #D3CFCC;
+        padding: 20px 30px 30px 30px;
+
+        #dishName
+        {
+            font-size: 30px;
+        }
+
+        #dishImg
+        {
+            margin-top: 10px;
+            display: inline-block;
+            
+            img
+            {
+                padding: 5px;
+                border: 1px solid #c3c3c3;
+            }
+        }
+
+        #addToCartBtn
+        {
+            color: white;
+            float: right;
+            margin-top: 20px;
+            font-weight: 100;
+            background-color: $maidanGreen;
+            -webkit-border-radius: 15px;
+                    border-radius: 15px;
+            padding: 15px 25px;
+            border-bottom: 1px solid #516323;
+            -webkit-box-shadow: 0px 1px 1px #888;
+                    box-shadow: 0px 1px 1px #888;
+        }
+
+        #infoContainer
+        {   
+            width: 375px;
+            margin-left: 10px;
+            margin-top: 15px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 17px;
+            vertical-align: top;
+            color:#333333;
+            
+            .restaurantContainer
+            {
+                margin-bottom: 10px;
+                a
+                {
+                    font-weight: normal;
+                    color: $maidanGreen;
+                    cursor: pointer;
+                }
+
+                .text
+                {
+                    font-weight: normal;
+                    font-weight: 100;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+
 .marginForFooter
 {
     height: 70px;
@@ -222,9 +303,12 @@ $bgGrey: #f0f0f0;
 .menuHeader-container
 {
     background: #fff;
-    -webkit-box-shadow: 0 2px 4px rgba(0,0,0, 0.4);
-    -moz-box-shadow: 0 2px 4px rgba(0,0,0, 0.4);
-    box-shadow: 0 2px 4px rgba(0,0,0, 0.4);
+    position: fixed;
+    -webkit-box-shadow:0px 1px 2
+    8px #D3CFCC;
+    box-shadow:0px 1px 8px #D3CFCC;
+    z-index: 100;
+    width: 100%;
     
     .menuNav
     {
