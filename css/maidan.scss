@@ -965,7 +965,7 @@ nav a:hover {
 
     .titleWidth
     {
-        width: 500px;
+        width: 550px;
     }
 
     .holder
@@ -1111,7 +1111,6 @@ nav a:hover {
         {
             @extend .titleWidth;
             margin-bottom: 20px;
-
         }
 
     }
@@ -1123,6 +1122,19 @@ nav a:hover {
         background-repeat: repeat;
         width: 100%;
         
+        .title, p.sub, p 
+        {
+            color: #777777 !important;
+            width: 460px;
+        }
+
+        .title
+        {
+            margin-top: 40px;
+            width: 590px  !important;
+        }
+
+        
         .middleText
         {
             font-size: 70px;
@@ -1133,11 +1145,15 @@ nav a:hover {
         
         .rightPic
         {
-            position: absolute;
-            right:0px;
-            background:#171c0a;
-            width: 500px;
-            height: 500px;
+         
+            
+            img
+            {
+                height: 550px;
+                margin-top: -430px;
+                margin-left: 650px;
+            }
+
         }
 
          nav.list
@@ -1189,13 +1205,16 @@ nav a:hover {
 
         @media only screen and (min-width: 650px) 
         {
-            height: 600px;
+            height: 550px;
 
         }
 
         @media only screen and (max-width: 649px) 
         {
-            height: 1100px;
+            .rightPic
+            {
+                display:none;
+            }
 
         }
 
