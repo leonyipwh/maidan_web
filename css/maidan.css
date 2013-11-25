@@ -593,7 +593,7 @@ nav a:hover {
     text-align: center; }
 
 .titleWidth, .leftText .title, .rightText .title {
-  width: 400px; }
+  width: 500px; }
 
 .holder {
   width: 100%;
@@ -646,10 +646,16 @@ nav a:hover {
   width: 100px;
   text-align: left;
   font-size: 60px;
-  padding-top: 90px;
+  padding-top: 30px;
   color: #7caf3c; }
+  .leftText p {
+    width: 350px !important; }
+  .leftText p.sub {
+    font-size: 25px;
+    width: 350px !important; }
   .leftText .title {
-    color: #7caf3c; }
+    color: #7caf3c;
+    margin-bottom: 10px; }
 
 #thirdHolder {
   background: url("../img/118.jpg");
@@ -663,12 +669,20 @@ nav a:hover {
   height: 500px; }
 
 .rightText {
-  width: 100px;
+  width: 200px;
   text-align: left;
   font-size: 60px;
-  padding-top: 90px;
-  padding-left: 650px;
+  padding-top: 70px;
+  padding-left: 600px;
   color: #FFF; }
+  .rightText p.sub {
+    font-size: 25px;
+    width: 500px !important;
+    margin-bottom: 20px; }
+  .rightText p {
+    width: 500px !important; }
+  .rightText .title {
+    margin-bottom: 20px; }
 
 #fourthHolder {
   background: url("../img/bg_texture.png");
