@@ -467,12 +467,17 @@ $bgGrey: #f0f0f0;
 
         #d2Menu.selectedDate
         {
-            width: 300px !important;
+            width: 280px !important;
         }
 
         #d3Menu.selectedDate
         {
-            width: 350px !important;
+            width: 310px !important;
+        }
+
+        #d4Menu.selectedDate
+        {
+            width: 290px !important;
         }
 
         .bottomLine
@@ -486,28 +491,27 @@ $bgGrey: #f0f0f0;
 
         #todayMenu .bottomLine
         {
-            width: 210px;
+            width: 200px;
         }
 
         #d2Menu .bottomLine
         {
-            width: 240px !important;
+            width: 210px !important;
         }
 
         #d3Menu .bottomLine
         {
-            width
-            : 290px !important;
+            width: 250px !important;
         }
 
         #d4Menu .bottomLine
         {
-            width: 260px !important;
+            width: 220px !important;
         }
 
         #d5Menu .bottomLine
         {
-            width: 210px !important;
+            width: 180px !important;
         }
     }
 
@@ -551,6 +555,7 @@ $bgGrey: #f0f0f0;
         img
         {
             width: 318px;    
+            height: 318px;
         }
     }
 

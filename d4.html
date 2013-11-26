@@ -84,19 +84,16 @@
                     </div>
                     <div class="dailyMenu">
                   
-                        <a id="todayMenu" href="menu.html">Mon
-                            <p><span class="month">Nov</span>&nbsp;<span class="date"> 18</span></p>
+                        <a id="todayMenu" href="menu.html">
+                            Mon
+                            <p><span class="month">Nov</span>&nbsp;<span class="date"> 25</span></p>
                             <div class="bottomLine"></div>
                         </a> 
 
-                        <a id="d2Menu" href="d2.html">Tue<p><span class="month">Nov</span>&nbsp;<span class="date"> 19</span></p><div class="bottomLine"></div>
-                        </a>
-
-                        <a id="d3Menu" href="d3.html">Wed<p><span class="month">Nov</span>&nbsp;<span class="date"> 20</span></p><div class="bottomLine"></div></a>
-
-                        <a id="d4Menu" class="selectedDate" href="d4.html">Thursday's Menu<p><span class="month">November</span>&nbsp;<span class="date"> 21</span></p><div class="bottomLine"></div></a>
-
-                        <a id="d5Menu" href="d5.html">Fri<p><span class="month">Nov</span>&nbsp;<span class="date"> 22</span></p><div class="bottomLine"></div></a>
+                        <a id="d2Menu" href="d2.html">Tue<p><span class="month">Nov</span>&nbsp;<span class="date"> 26</span></p><div class="bottomLine"></div></a>
+                        <a id="d3Menu" href="d3.html">Wed<p><span class="month">Nov</span>&nbsp;<span class="date"> 27</span></p><div class="bottomLine"></div></a>
+                        <a id="d4Menu"  class="selectedDate" href="d4.html">Thursday's Menu<p><span class="month">Nov</span>&nbsp;<span class="date"> 28</span></p><div class="bottomLine"></div></a>
+                        <a id="d5Menu" href="d5.html">Fri<p><span class="month">Nov</span>&nbsp;<span class="date"> 29</span></p><div class="bottomLine"></div></a>
                     </div>
                 </div>
             </header>
@@ -189,6 +186,13 @@
         <script type="text/javascript">
             
             jQuery(document).ready(function($) {
+
+            var dropdownWidth;
+
+            dropdownWidth = ($('.acName').width())+7;
+
+            $('#dropdown-menu li').width(dropdownWidth);
+
 
             $(".selectedDate").find(".bottomLine").show();
             });
