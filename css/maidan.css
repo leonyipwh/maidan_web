@@ -28,6 +28,12 @@
   font-weight: 700;
   src: local("Oswald Bold"), local("Oswald-Bold"), url(https://themes.googleusercontent.com/static/fonts/oswald/v7/bH7276GfdCjMjApa_dkG6bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff"); }
 
+@font-face {
+  font-family: 'helveticaNeue';
+  font-style: normal;
+  font-weight: 700;
+  src: local("helFont"), local("helFont"), url(maidanFonts/HelveticaNeueLight.ttf) format("ttf"); }
+
 a:hover {
   color: none; }
 
@@ -42,7 +48,7 @@ textarea {
   color: #222; }
 
 body {
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "helveticaNeue", sans-serif;
   font-size: 1em;
   line-height: 1.4; }
 
@@ -147,9 +153,9 @@ textarea {
 
 .text {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 30px;
-  font-weight: 100;
+  font-weight: normal;
   color: #808080; }
 
 .topic {
@@ -214,6 +220,7 @@ textarea {
 .menuHeader-container {
   background: #fff;
   position: fixed;
+  height: 130px;
   -webkit-box-shadow: 0px 1px 2 8px #D3CFCC;
   box-shadow: 0px 1px 8px #D3CFCC;
   z-index: 100;
@@ -281,7 +288,7 @@ textarea {
   .menuHeader-container .dailyMenu {
     width: 800px;
     margin-top: 0px;
-    font-size: 30px;
+    font-size: 28px;
     height: 80px; }
     .menuHeader-container .dailyMenu a {
       color: #585d5b;
@@ -293,11 +300,14 @@ textarea {
       .menuHeader-container .dailyMenu a p {
         display: block;
         font-size: 14px;
+        font-weight: 400;
         color: #585d5b; }
     .menuHeader-container .dailyMenu a.selectedDate {
       color: #7caf3c;
-      font-weight: bold;
+      font-weight: 400;
       width: 330px; }
+      .menuHeader-container .dailyMenu a.selectedDate p {
+        color: #7caf3c; }
     .menuHeader-container .dailyMenu #d2Menu.selectedDate {
       width: 300px !important; }
     .menuHeader-container .dailyMenu #d3Menu.selectedDate {
@@ -305,7 +315,7 @@ textarea {
     .menuHeader-container .dailyMenu .bottomLine {
       display: none;
       position: inherit;
-      margin-top: 18px;
+      margin-top: 14px;
       width: 100%;
       border-bottom: 6px solid #7caf3c; }
     .menuHeader-container .dailyMenu #todayMenu .bottomLine {
@@ -347,6 +357,7 @@ textarea {
     .item .dishInfo .dishName {
       font-weight: bold; }
     .item .dishInfo .restaurantName {
+      font-size: 12px;
       padding-top: 5px;
       color: #737373; }
   .item .priceAndAdd {
@@ -355,14 +366,14 @@ textarea {
     margin-bottom: 5px; }
     .item .priceAndAdd .dishPrice {
       display: inline-block;
-      font-size: 17px;
+      font-size: 15px;
       padding-right: 5px; }
     .item .priceAndAdd .addBtn {
       display: inline-block;
-      width: 45px;
+      font-size: 12px;
       margin-right: 5px;
       margin-top: 5px;
-      padding: 5px 10px;
+      padding: 5px 10px 5px 10px;
       background-color: #7caf3c;
       -webkit-border-radius: 5px;
       border-radius: 5px; }
@@ -381,9 +392,9 @@ textarea {
   #registerForm .title {
     width: 100%;
     color: #7caf3c;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
-    margin-top: 30px; }
+    margin-top: 50px; }
   #registerForm .loginText {
     font-size: 18px;
     margin-bottom: 50px; }
@@ -399,6 +410,9 @@ textarea {
     font-size: 18px; }
     #registerForm .registerField input {
       width: 300px; }
+    #registerForm .registerField p.message {
+      font-size: 15px;
+      width: 330px; }
 
 .continueBtn {
   font-size: 15px;
@@ -513,6 +527,10 @@ textarea {
     font-size: 15px;
     margin-bottom: 40px;
     line-height: 25px; }
+    .questionContainer .answer span a {
+      color: #7caf3c; }
+    .questionContainer .answer ul {
+      list-style: circle; }
 
 /* about */
 #aboutTopBanner {
@@ -527,6 +545,8 @@ textarea {
   float: left;
   width: 70%;
   margin-right: 100px; }
+  #content .leftContent .italic {
+    font-style: italic; }
   #content .leftContent .title {
     font-size: 34px;
     font-weight: 200;
@@ -535,7 +555,7 @@ textarea {
     width: 500px; }
   #content .leftContent p {
     padding-top: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     width: 100%;
     font-size: 15px; }
 #content .rightContent {
@@ -606,7 +626,7 @@ nav a:hover {
   background-repeat: no-repeat; }
   #firstHolder .middleText {
     text-align: center;
-    font-size: 75px;
+    font-size: 72px;
     padding-top: 100px;
     color: #FFF; }
     #firstHolder .middleText .weMakeFood {
@@ -616,7 +636,7 @@ nav a:hover {
       border-bottom: 1px solid #ffffff; }
     #firstHolder .middleText .textUnderTitle {
       padding-top: 20px;
-      font-size: 35px; }
+      font-size: 30px; }
     #firstHolder .middleText .joinBtn {
       cursor: pointer;
       color: #fff;
@@ -645,8 +665,8 @@ nav a:hover {
 .leftText {
   width: 100px;
   text-align: left;
-  font-size: 60px;
-  padding-top: 30px;
+  font-size: 50px;
+  padding-top: 60px;
   color: #7caf3c; }
   .leftText p {
     width: 350px !important; }
@@ -671,16 +691,16 @@ nav a:hover {
 .rightText {
   width: 200px;
   text-align: left;
-  font-size: 60px;
-  padding-top: 70px;
+  font-size: 50px;
+  padding-top: 80px;
   padding-left: 600px;
   color: #FFF; }
   .rightText p.sub {
     font-size: 25px;
-    width: 500px !important;
+    width: 400px !important;
     margin-bottom: 20px; }
   .rightText p {
-    width: 500px !important; }
+    width: 400px !important; }
   .rightText .title {
     margin-bottom: 20px; }
 
@@ -702,7 +722,7 @@ nav a:hover {
   #fourthHolder .rightPic img {
     height: 550px;
     margin-top: -430px;
-    margin-left: 650px; }
+    margin-left: 50%; }
   #fourthHolder nav.list {
     width: 100%;
     padding-top: 50px;
